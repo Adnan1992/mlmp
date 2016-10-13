@@ -1,0 +1,181 @@
+﻿@helper SelectedTabClass(string tabName)
+{
+if (tabName == ViewBag.SelectedTab)
+{
+        @: active
+}
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/icon.ico" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/Content/all.css" />
+    <link rel="stylesheet" href="~/Content/app.css" />
+    <link rel="stylesheet" href="~/Content/own.css" />
+
+
+    <script src="~/Scripts/all.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.intellisense.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+    <meta name="description" content="The description of my page" />
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-size-large navbar-size-xlarge paper-shadow" data-z="0" data-animated role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index", "Pages")"> <img src="~/Content/Images/logo.png" style="width:200px; margin-left:-40px;" /> </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li class="@SelectedTabClass("home")">
+                        <a href="@Url.Action("Index","Pages")" class="dropdown-toggle">Home</a>
+                    </li>
+                    <li class="@SelectedTabClass("course")">
+                        <a href="@Url.Action("Index","Courses")" class="dropdown-toggle">Courses</a>
+                    </li>
+                    <li class="@SelectedTabClass("instructor")">
+                        <a href="@Url.Action("InstList","Instructors")" class="dropdown-toggle">Instructors</a>
+                    </li>
+                    <li class="@SelectedTabClass("gallery")">
+                        <a href="@Url.Action("Index","Gallerie")" class="dropdown-toggle">Gallery</a>
+                    </li>
+                    <li class="@SelectedTabClass("contact")">
+                        <a href="@Url.Action("ContactUs","Pages")" class="dropdown-toggle">Contact us</a>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="navbar-right">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("instructor"))
+                        {
+                            { Html.RenderAction("instructordropdown", "Pages", null); }
+                        }
+                        if (User.IsInRole("student"))
+                        {
+                            { Html.RenderAction("studentdropdown", "Pages", null); }
+                        }
+                        if (User.IsInRole("admin"))
+                        {
+                            { Html.RenderAction("admin", "Pages", null); }
+                        }
+
+                    }
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Login", "Account")" class="navbar-btn btn btn-primary">Log In</a>
+                    }
+
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+
+
+
+    @RenderSection("an", false)
+
+
+    <div class="below-header">
+        @RenderBody()
+    </div>
+
+
+
+
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h4 class="text-headline text-light">Important Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Index","Pages")">Home</a></li>
+                        <li><a href="@Url.Action("Index","Courses")">Courses</a></li>
+                        <li><a href="@Url.Action("InstList","Instructors")">Instructor</a></li>
+                        <li><a href="@Url.Action("Index","Gallerie")">Gallery</a></li>
+                        <li><a href="@Url.Action("ContactUs","Pages")">Contact us</a></li>
+                    </ul>
+                </div>
+                @*<div class="col-sm-6 col-md-3">
+                        <h4 class="text-headline text-light">Explore</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Tutors</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Become Tutor</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>*@
+                <div class="col-xs-12 col-md-6">
+                    <br />
+                    <p>
+                        <a href="https://www.facebook.com/Microtechxofficial/" target="_blank" class="btn btn-indigo-500 btn-circle"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="btn btn-pink-500 btn-circle"><i class="fa fa-dribbble"></i></a>
+                        <a href="#" class="btn btn-blue-500 btn-circle"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="btn btn-danger btn-circle"><i class="fa fa-google-plus"></i></a>
+                    </p>
+                    <p class="text-subhead">
+                        MicrotechX Technologies &copy; Copyright @DateTime.Now.Year
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br /> <br />
+    <footer class="footer navbar-fixed-bottom">
+        <span><strong>MicrotechX Technologies</strong>  &copy; Copyright @DateTime.Now.Year</span>
+    </footer>
+
+
+    <script>
+        var colors = {
+            "danger-color": "#e74c3c",
+            "success-color": "#81b53e",
+            "warning-color": "#f0ad4e",
+            "inverse-color": "#2c3e50",
+            "info-color": "#2d7cb5",
+            "default-color": "#6e7882",
+            "default-light-color": "#cfd9db",
+            "purple-color": "#9D8AC7",
+            "mustard-color": "#d4d171",
+            "lightred-color": "#e15258",
+            "body-bg": "#f6f6f6"
+        };
+        var config = {
+            theme: "html",
+            skins: {
+                "default": {
+                    "primary-color": "#42a5f5"
+                }
+            }
+        };
+    </script>
+
+</body>
+</html>

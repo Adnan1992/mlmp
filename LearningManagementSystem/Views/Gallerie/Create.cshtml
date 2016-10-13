@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Upload Images";
+}
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+
+
+            <div class="col-md-9" id="dashboard">
+                <!-- Tabbable Widget -->
+                <div class="tabbable paper-shadow relative" data-z="0.5">
+                    <!-- Tabs -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            @using (Html.BeginForm("Create", "Gallerie", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Image</label>
+                                        <div class="col-md-6">
+                                            <div class="media v-middle">
+                                                <div class="media-body">
+                                                    <input type="file" accept="image/*" value="Upload Image" multiple name="Image" class="btn btn-white btn-sm paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><br />
+
+                                    <div class="form-group margin-none">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <button type="submit" class="btn btn-primary paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated>Upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div><!--End Tab Content-->
+                </div><!--End Tabbable Widget -->
+                <br />
+                <br />
+            </div><!--End Col-md-9-->
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");
+            }
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+﻿@model Batch
+@{
+    ViewBag.Title = "Create Batch";
+}
+
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+
+
+
+<link rel="stylesheet" href="~/Content/bootstrap-datepicker.css" />
+
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Create New Batch</h4>
+                    <hr />
+                    <div class="panel-body">
+                        @using (Html.BeginForm("CreateBatch", "Courses", FormMethod.Post, new { @class = "form-horizontal" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <p>@ViewBag.mess</p>
+                            @*<div class="form-group">*@
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                @Html.Label("course", htmlAttributes: new { @class = "col-sm-3 control-label" })
+                                <div class="col-md-9">
+                                    @Html.DropDownList("Course", (IEnumerable<SelectListItem>)ViewBag.selectcourse, "Select Course", htmlAttributes: new { @class = "selectpicker" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("instructor", htmlAttributes: new { @class = "col-sm-3 control-label" })
+                                <div class="col-md-9">
+                                    @Html.DropDownList("Instructor", (IEnumerable<SelectListItem>)ViewBag.instructor, "Select Instructor", htmlAttributes: new { @class = "selectpicker" })
+                                </div>
+                            </div>
+                            @*<div class="panel panel-default">*@
+                            <div class="form-group">
+                                @Html.Label("Starting Date", htmlAttributes: new { @class = "col-sm-3 control-label" })
+                                <div class="col-md-9">
+                                    @Html.TextBoxFor(model => model.StartingDate, new { @class = "form-control datepicker" })
+                                    @Html.ValidationMessageFor(model => model.StartingDate, "", new { @class = "text-danger" })
+                                    @*<input id="datepicker" type="text" class="form-control datepicker">*@
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("Finishing Date", htmlAttributes: new { @class = "col-sm-3 control-label" })
+                                <div class="col-md-9">
+                                    @Html.TextBoxFor(model => model.FinishingDate, new { @class = "form-control datepicker" })
+                                    @Html.ValidationMessageFor(model => model.FinishingDate, "", new { @class = "text-danger " })
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body buttons-spacing-vertical">
+                                    <p>
+                                        <button type="submit" class="btn btn-success"><i class="fa fa-check-circle"></i> Create</button>
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script>
+    $(function () {
+        $(".datepicker").datepicker({
+        });
+        //$(".datepicker").datepicker({
+        //});
+    });
+
+</script>

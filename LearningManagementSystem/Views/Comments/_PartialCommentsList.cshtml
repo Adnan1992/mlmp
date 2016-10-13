@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Comment>
+
+@foreach (var item in Model)
+{
+    <div class="panel-body">
+        <div class="text-subhead-2">@item.MadeBy</div>
+        <p>
+            @item.Text
+        </p>
+    </div>
+}

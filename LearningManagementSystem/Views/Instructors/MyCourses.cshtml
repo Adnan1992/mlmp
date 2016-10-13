@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Batch>
+
+
+@{
+    ViewBag.Title = "My Courses";
+}
+
+@{Html.RenderAction("Header"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row" data-toggle="isotope" id="courses">
+                    @foreach (var item in Model)
+                    {
+                        <div class="item col-xs-12 col-sm-6 col-lg-4">
+                            <div class="panel panel-default paper-shadow" data-z="0.5">
+                                <div class="panel-heading">
+                                    <div class="cover overlay cover-image-full hover">
+                                        <img class="img height-150 bg-default" src="@Url.Content(item.Course.Path)" />
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4 class="text-headline margin-v-0-10"><a href="@Url.Action("Details","Courses",new { id=item.BatchID})">@item.BatchName</a></h4>
+                                    </div>
+                                    <hr class="margin-none" />
+                                    <div class="panel-body">
+                                        <a class="btn btn-white btn-flat paper-shadow relative" data-z="0" data-hover-z="1" data-animated href="@Url.Action("Details","Courses",new { id=item.BatchID})">Go to course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar");}
+        </div>
+    </div>
+</div>

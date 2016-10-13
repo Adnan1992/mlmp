@@ -1,0 +1,89 @@
+﻿
+@using PagedList;
+@using PagedList.Mvc;
+
+
+@model IEnumerable<Attendance>
+<script>
+
+    $(document).ready(function () {
+        $('#checkAll').click(function (event) {  //on click
+            if (this.checked) { // check select status
+                $("input[type='checkbox']").each(function () { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"
+
+                });
+            }
+            else {
+                $("input[type='checkbox']").each(function () { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"
+                });
+            }
+        });
+    });
+</script>
+
+
+@*<div class="container">
+    <div class="page-section">*@
+        @*<div class="row">*@
+            <div class="col-md-10 col-lg-12 col-md-offset-1 col-lg-offset-0">
+
+                <div class="panel panel-default" id="listenrol">
+                    <!-- Progress table -->
+                    <div class="table-responsive">
+                        @using (Html.BeginForm("MarkAttendance", "Attendances",FormMethod.Post))
+                        {
+                            
+                            <table class="table v-middle">
+
+
+                                <thead>
+                                    <tr>
+                                        <th width="20">
+                                            <div class="checkbox checkbox-single margin-none">
+                                                <input id="checkAll" data-toggle="check-all" data-target="#responsive-table-body" type="checkbox">
+                                                <label for="checkAll">Check All</label>
+                                            </div>
+                                        </th>
+                                        <th>Date</th>
+                                        <th>Title</th>
+                                        <th>Name</th>
+                                        <th>Attendance Status</th>
+                                    </tr>
+                                </thead>
+
+
+                                @foreach (var item in Model)
+                                { 
+                                    <tr>
+
+                                        <td>
+                                            <div class="checkbox checkbox-single">
+                                                <input id="@item.AttendanceID" name="CheckIds" value="@item.AttendanceID" type="checkbox">
+                                                <label for="@item.AttendanceID">Label</label>
+                                            </div>
+                                        </td>
+                                        <td><span class="label label-default">@Html.DisplayFor(modelItem => item.AttendanceDate)</span></td>
+
+                                        <td><span class="label label-default">@Html.DisplayFor(modelItem => item.Enrollment.Batch.Course.Title)</span></td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Enrollment.Student.FullName)
+                                        </td>
+                                        <td>@Html.DisplayFor(modelItem => item.AttendanceStatus)</td>
+                                    </tr>
+
+                                }
+                                <tr>
+                                    <td><button type="submit" class="btn btn-success" name="checkbox">Mark Attendance</button></td>
+                                </tr>
+
+                            </table>
+                        }
+                    </div>
+                    @*@{Html.RenderPartial("_EnrolPartial", Model); }*@
+                </div>
+            </div>
+        @*</div>*@
+    @*</div>
+</div>*@

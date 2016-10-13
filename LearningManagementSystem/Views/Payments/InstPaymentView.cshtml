@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Batch>
+@{
+    ViewBag.Title = "My Payments";
+}
+
+@{Html.RenderAction("Header", "Instructors"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Payment</h4>
+                    <hr />
+                    <div class="table-responsive">
+                        <table class="table v-middle">
+                            <thead>
+                                <tr>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Related Batch</th>
+                                </tr>
+                            </thead>
+                            <tbody id="responsive-table-body">
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td><span class="label label-default">@Html.DisplayFor(modelItem => item.Payment.Amount)</span></td>
+                                        <td><span class="label label-default">@Html.DisplayFor(modelItem => item.Payment.PaymentDate)</span></td>
+                                        <td><span class="label label-default">@Html.DisplayFor(modelItem => item.BatchName)</span></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar", "Instructors");}
+        </div>
+    </div>
+</div>

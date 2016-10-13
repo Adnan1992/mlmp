@@ -1,0 +1,46 @@
+﻿
+
+
+@using (Ajax.BeginForm("SelectBatch", "Attendances", new AjaxOptions { UpdateTargetId = "selectstu" }, htmlAttributes: new { @class = "form-horizontal",id= "SelectBatch" }))
+{
+    <div class="form-group">
+        @Html.Label("Batch Name", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Batch", (IEnumerable<SelectListItem>)ViewBag.batchlist, "Select Batch", htmlAttributes: new { @class = "" })
+        </div>
+    </div>
+}
+
+<script>
+    //$(document).ready(function () {
+    //$("#Course").change(function () {
+    //    var value = $(this).val();
+    //    $(this).parents('form').submit();
+    //    alert(value);
+    //    });
+    //});
+
+    //$(document).ready(function () {
+    //    $("#Course").change(function () {
+    //        var value = $(this).text();
+    //        $(this).parents('form').submit();
+    //        alert(value);
+    //    });
+    //});
+
+
+    //selecting text
+    //$(document).ready(function() {
+    //    $("#Course").change(function () {
+    //        alert($('option:selected', $(this)).val());
+    //        $(this).parents('form').submit();
+    //    });
+    //});
+    //selecting value
+    $(document).ready(function () {
+        $("#Batch").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>

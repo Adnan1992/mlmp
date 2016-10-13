@@ -1,0 +1,58 @@
+﻿@model Payment
+
+@{
+    ViewBag.Title = "Edit Payment";
+    dynamic date = null;
+}
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Edit Payment</h4>
+                    <hr />
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            @using (Html.BeginForm("Edit", "Payments", FormMethod.Post))
+                            {
+                                {
+                                    date = Model.PaymentDate.ToString("d");
+                                }
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.PaymentID)
+                                @Html.HiddenFor(model => model.Batch.BatchID)
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextBoxFor(model => model.Amount, new { @class = "form-control used", @placeholder = "Amount" })
+                                    @Html.Label("Amount")
+                                    @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextBoxFor(model => model.PaymentForBatch, new { @readonly = "readonly", @class = "form-control used" })
+                                    @Html.Label("Batch Name")
+                                    @Html.ValidationMessageFor(model => model.PaymentForBatch, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextBoxFor(model => model.Batch.InstructorNamme, new { @readonly = "readonly", @class = "form-control used" })
+                                    @Html.Label("Instructor")
+                                    @Html.ValidationMessageFor(model => model.Batch.InstructorNamme, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextBoxFor(model => date, new { @readonly = "readonly", @class = "form-control used" })
+                                    @Html.Label("Instructor")
+                                    @Html.ValidationMessageFor(model => model.PaymentDate, "", new { @class = "text-danger" })
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>

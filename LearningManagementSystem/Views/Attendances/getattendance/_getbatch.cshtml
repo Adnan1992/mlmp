@@ -1,0 +1,24 @@
+﻿
+
+
+@using (Ajax.BeginForm("getDate", "Attendances", new AjaxOptions { UpdateTargetId = "selectstu" }, htmlAttributes: new { @class = "form-horizontal", id = "SelectBatch" }))
+{
+    <div class="form-group">
+        @Html.Label("Batch Name", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Batch", (IEnumerable<SelectListItem>)ViewBag.batchlist, "Select Batch", htmlAttributes: new { @class = "" })
+        </div>
+    </div>
+}
+
+<script>
+    
+    //selecting value
+    $(document).ready(function () {
+        $("#Batch").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>
+

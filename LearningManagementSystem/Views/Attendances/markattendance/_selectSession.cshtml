@@ -1,0 +1,22 @@
+﻿
+
+
+
+@using (Ajax.BeginForm("SelectSession", "Attendances", new AjaxOptions { UpdateTargetId = "session" }, htmlAttributes: new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        @Html.Label("Select Session", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Session", new SelectList(ViewBag.selectsession as  System.Collections.IEnumerable), "Select Session", htmlAttributes: new { @class = "" })
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#Session").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>

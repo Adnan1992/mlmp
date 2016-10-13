@@ -1,0 +1,477 @@
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.exe
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.exe.config
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.rsp
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csi.exe
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csi.rsp
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.AppContext.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Console.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.exe
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.exe.config
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.rsp
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.dll.config
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.pdb
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.SqlServer.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Newtonsoft.Json.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Owin.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.Mvc.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGrid.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGrid.SmtpApi.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGridMail.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Net.Http.Formatting.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Helpers.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Mvc.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Razor.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Deployment.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Razor.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.SqlServer.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Newtonsoft.Json.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.Mvc.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Net.Http.Formatting.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Razor.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Deployment.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Razor.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Helpers.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Mvc.xml
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.csprojResolveAssemblyReference.cache
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.dll
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.first.resources
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.Cache
+F:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.fileuploaddb.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.exe
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.exe.config
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csc.rsp
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csi.exe
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\csi.rsp
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.exe
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.exe.config
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\vbc.rsp
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.dll.config
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\LearningManagementSystem.pdb
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Newtonsoft.Json.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Owin.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.Mvc.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGrid.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGrid.SmtpApi.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\SendGridMail.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Helpers.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Mvc.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Razor.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\Newtonsoft.Json.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\PagedList.Mvc.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Razor.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Helpers.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\bin\System.Web.Mvc.xml
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.dll
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.csprojResolveAssemblyReference.cache
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.initial.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.Cache
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._14th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._15th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._16th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._17th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._18th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._19th.resources
+E:\Visual Studio Project Files\MVC Project Practice\LearningManagementSystem\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations._20th.resources
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\csc.exe
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\csc.exe.config
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\csc.rsp
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\csi.exe
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\csi.rsp
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\vbc.exe
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\vbc.exe.config
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\vbc.rsp
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Github\MTLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Github\MTLMP\LearningManagementSystem\bin\LearningManagementSystem.dll.config
+E:\Github\MTLMP\LearningManagementSystem\bin\LearningManagementSystem.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\LearningManagementSystem.pdb
+E:\Github\MTLMP\LearningManagementSystem\bin\EntityFramework.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Newtonsoft.Json.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\Owin.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\PagedList.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\PagedList.Mvc.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Helpers.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Mvc.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Razor.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\Github\MTLMP\LearningManagementSystem\bin\EntityFramework.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\Newtonsoft.Json.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\PagedList.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\PagedList.Mvc.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Razor.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Helpers.xml
+E:\Github\MTLMP\LearningManagementSystem\bin\System.Web.Mvc.xml
+E:\Github\MTLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csprojResolveAssemblyReference.cache
+E:\Github\MTLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.dll
+E:\Github\MTLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+E:\Github\MTLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.initial.resources
+E:\Github\MTLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.Cache
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\csc.exe
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\csc.exe.config
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\csc.rsp
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\csi.exe
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\csi.rsp
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\vbc.exe
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\vbc.exe.config
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\vbc.rsp
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Github\MLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Github\MLMP\LearningManagementSystem\bin\LearningManagementSystem.dll.config
+E:\Github\MLMP\LearningManagementSystem\bin\LearningManagementSystem.dll
+E:\Github\MLMP\LearningManagementSystem\bin\LearningManagementSystem.pdb
+E:\Github\MLMP\LearningManagementSystem\bin\EntityFramework.dll
+E:\Github\MLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Newtonsoft.Json.dll
+E:\Github\MLMP\LearningManagementSystem\bin\Owin.dll
+E:\Github\MLMP\LearningManagementSystem\bin\PagedList.dll
+E:\Github\MLMP\LearningManagementSystem\bin\PagedList.Mvc.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Helpers.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Mvc.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Razor.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.dll
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\Github\MLMP\LearningManagementSystem\bin\EntityFramework.xml
+E:\Github\MLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Github\MLMP\LearningManagementSystem\bin\Newtonsoft.Json.xml
+E:\Github\MLMP\LearningManagementSystem\bin\PagedList.xml
+E:\Github\MLMP\LearningManagementSystem\bin\PagedList.Mvc.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Razor.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Helpers.xml
+E:\Github\MLMP\LearningManagementSystem\bin\System.Web.Mvc.xml
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.initial.resources
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.courselength.resources
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.sadasd.resources
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.paymentfinall.resources
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.Cache
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.dll
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csprojResolveAssemblyReference.cache
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.test.resources
+E:\Github\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.changedb.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\csc.exe
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\csc.exe.config
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\csc.rsp
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\csi.exe
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\csi.rsp
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\vbc.exe
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\vbc.exe.config
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\vbc.rsp
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\LearningManagementSystem.dll.config
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\LearningManagementSystem.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\LearningManagementSystem.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\EntityFramework.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Newtonsoft.Json.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Owin.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.EntityFramework.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.Mvc.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\RestSharp.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Helpers.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Mvc.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Razor.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Api.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Mvc.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Twiml.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\EntityFramework.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Newtonsoft.Json.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.EntityFramework.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.EntityFramework.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\PagedList.Mvc.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\RestSharp.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Api.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Api.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Mvc.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Mvc.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Twiml.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\Twilio.Twiml.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Razor.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Helpers.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\bin\System.Web.Mvc.xml
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.initial.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.assignment.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.delfilUp.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.comment.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.IdontKnowWhatHapped.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.courselength.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.amountrequired.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.correctStudent.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.correctInstructor.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.gallery.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.studentbiography.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.StudentFees.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.Cache
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.dll
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.emptymigration.resources
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.csprojResolveAssemblyReference.cache
+E:\Bitbucket\MLMP\LearningManagementSystem\obj\Debug\LearningManagementSystem.Migrations.lectures.resources

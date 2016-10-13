@@ -1,0 +1,85 @@
+﻿@model ContactUsViewModels
+@{
+    ViewBag.Title = "Contact Us";
+}
+<div class="parallax page-section bg-blue-300">
+    <div class="container parallax-layer" data-opacity="true">
+        <div class="media media-grid v-middle">
+            <div class="media-left">
+                <span class="icon-block half bg-blue-500 text-white"><i class="fa fa-envelope"></i></span>
+            </div>
+            <div class="media-body">
+                <h3 class="text-display-2 text-white margin-none">Contact us</h3>
+                <p class="text-white text-subhead">Feel free to visit or send us a message anytime.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-overlay">
+    <div class="row">
+        <iframe class="parallax-layer top left" data-translate-when="inViewport" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.7405507938718!2d74.25933033196202!3d31.470225887407885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2ca424377eeb231!2sSajjad+Center!5e0!3m2!1sen!2s!4v1473074811546" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="page-section parallax relative overflow-hidden">
+    <img class="parallax-layer absolute top left" data-translate-when="inViewport" src="~/Content/Images/main-page.png" alt="parallax image" />
+
+    <div style="width: 100%; background-color: white;">
+        <div class="page-section">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            @using (Html.BeginForm("ContactUs", "Pages", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-control-material static required">
+                                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control used", @placeholder = "Name", value = "" })
+                                            @Html.LabelFor(model => model.Name)
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-control-material static required">
+                                            @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control used", @placeholder = "Contact #", value = "" })
+                                            @Html.Label("Contact #")
+                                            @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-control-material static required">
+                                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control used", @placeholder = "Email ...", value = "" })
+                                            @Html.LabelFor(model => model.Email)
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-control-material static required">
+                                            @Html.TextBoxFor(model => model.Subject, new { @class = "form-control used", @placeholder = "Subject", value = "" })
+                                            @Html.LabelFor(model => model.Subject)
+                                            @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextAreaFor(model => model.Message, 5, 8, new { @class = "form-control used", value = "", @placeholder = "Your  Message" })
+                                    @Html.LabelFor(model => model.Message)
+                                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                </div>
+                                <br />
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

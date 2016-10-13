@@ -1,0 +1,59 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<StudentFee>
+
+
+<div id="userlist">
+    <div class="table-responsive">
+        @using (Ajax.BeginForm("AjaxFeesList", "Payments", new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.ReplaceWith, HttpMethod = "GET" }))
+        {
+            <div class="col-md-4" style="margin-left: 180px;">
+                <div class="form-group form-control-material static">
+                    @Html.TextBox("search", null, new { @class = "form-control used", @placeholder = "Search by Firstname", value = "" })
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 60px;">
+                <button type="submit" value="Change password" class="btn btn-success btn-stroke"><span><i class="fa fa-search"></i></span> Search User</button>
+            </div>
+        }
+        <table class="table v-middle">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Batch Name</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="responsive-table-body">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td> @item.Enrollment.Student.FullName </td>
+                        <td><a href="#">@item.Enrollment.Batch.BatchName</a></td>
+                        <td>@item.Amount</td>
+                        <td>
+                            <a href="@Url.Action("FeesEdit", "Payments", new { id = item.StudentFeeID })" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <i class="fa fa-edit"> Edit</i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="panel-footer padding-none text-center">
+        <ul class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("AjaxFeesList", new { page, search = Request.QueryString["search"] }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions()
+       {
+           Display = PagedListDisplayMode.IfNeeded,
+           DisplayPageCountAndCurrentLocation = true,
+           MaximumPageNumbersToDisplay = 3
+       },
+new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }
+))
+        </ul>
+    </div>
+</div>

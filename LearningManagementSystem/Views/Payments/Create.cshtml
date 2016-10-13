@@ -1,0 +1,47 @@
+﻿@model Payment
+
+@{
+    ViewBag.Title = "Create Payment";
+}
+
+
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+
+
+
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Add Payment</h4>
+                    <hr />
+                    <div class="panel-body">
+                        @using (Html.BeginForm("Create", "Payments", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group form-control-material static required">
+                                @Html.DropDownList("PaymentID", null, htmlAttributes: new { @class = "form-control used" })
+                                @Html.LabelFor(model => model.PaymentID)
+                                @Html.ValidationMessageFor(model => model.PaymentID, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group form-control-material static required">
+                                @Html.TextBoxFor(model => model.Amount, new { @class = "form-control used", @placeholder = "Amount", value = "" })
+                                @Html.Label("Amount")
+                                @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        }
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>

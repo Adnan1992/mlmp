@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Create Session";
+}
+
+
+@{Html.RenderAction("Header", "Instructors"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Create Attendance</h4>
+                    <hr />
+                    <div class="panel-body">
+                        @{Html.RenderPartial("~/Views/Attendances/createattendance/_forattendance.cshtml");}
+
+                        <div id="SelectBatch">
+                        </div>
+                        <div id="selectstu"></div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar", "Instructors");}
+        </div>
+    </div>
+</div>

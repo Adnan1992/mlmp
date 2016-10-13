@@ -1,0 +1,143 @@
+﻿@model EnrollmentViewModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="parallax bg-white page-section" style="background-image:url(@Url.Content(Model.Path));">
+    <div class="parallax-layer container" data-opacity="true">
+        <div class="media v-middle">
+            <div class="media-body">
+                <h1 class="text-display-1 margin-none">@Model.Title</h1>
+            </div>
+            <div class="media-right">
+                <a class="btn btn-white" href="@Url.Action("Index","Courses")">Library</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-8">
+            <div class="page-section">
+                <p>@Html.Raw(Model.Description)</p>
+                <br />
+                @if (Model.CheckStatus == false)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+            </div>
+
+            <!--Assignments -->
+            @if (User.IsInRole("student") || User.IsInRole("instructor"))
+            {
+                if (Model.CheckStatus == true || User.IsInRole("instructor"))
+                {
+                    <div class="page-section">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h2 class="text-headline margin-none">Assignments</h2>
+                                <ul class="list-group relative paper-shadow" data-hover-z="0.5" data-animated>
+                                    @{ Html.RenderAction("Assignments", "Courses", new { id = Model.BatchId });
+                                    }
+                                </ul>
+                            </div>
+                            <div class="col-md-5">
+                                <h2 class="text-headline margin-none">Lectures</h2>
+                                <ul class="list-group relative paper-shadow" data-hover-z="0.5" data-animated>
+                                    @{ Html.RenderAction("Lectures", "Courses", new { id = Model.BatchId });
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                            }
+                                        }
+
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="page-section">
+                <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+                    <div class="panel-heading">
+                        <h4 class="text-headline">@Model.Title</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-caption">
+                            <i class="fa fa-calendar fa-fw"></i> @Model.StartingDate.ToString("dd-MMM-yyyy") &minus;
+                            <i class="fa fa-calendar fa-fw"></i> @Model.FinishingDate.ToString("dd-MMM-yyyy")
+                            <br />
+                            <i class="fa fa-user fa-fw"></i> Instructor: @Model.InstName
+                        </p>
+                    </div>
+                    <hr class="margin-none" />
+                    <div class="panel-body text-center">
+                        @if (User.IsInRole("student") || !User.Identity.IsAuthenticated)
+                        {
+                            if ((ViewBag.UserID == Model.UserId && Model.Status == false) || !User.Identity.IsAuthenticated)
+                            {
+                                <p><a class="btn btn-success btn-lg paper-shadow relative" data-z="1" data-hover-z="2" data-animated href="@Url.Action("Enrol", "Courses", new { id = Model.BatchId })">Start Course</a></p>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container">
+        <div class="page-section">
+            <div class="row">
+                <div class="col-md-8 col-lg-9">
+                    <div class="page-section padding-top-none">
+                        <div class="media media-overflow-visible s-container">
+                            <div class="media-body">
+                                <h1 class="text-display-1 margin-top-none">Give a Review</h1>
+                            </div>
+                        </div>
+                    </div>
+                    @if (Model.CheckStatus == true || User.IsInRole("instructor"))
+                    {
+                        <div class="page-section padding-top-none">
+                            <div class="panel panel-default paper-shadow" data-z="0.5">
+                                <div class="panel-body">
+                                    @using (Html.BeginForm("Create", "Comments", FormMethod.Post, new { @class = "form-horizontal" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                        @Html.HiddenFor(model => model.BatchId)
+                                        <div class="form-group form-control-material">
+                                            @Html.TextBox("Text", null, new { @required= "required", @class = "form-control used", @placeholder = "Your review..." })
+                                            <label>Your Review</label>
+                                        </div>
+                                        <div class="text-right">
+                                            <button class="btn btn-primary" type="submit">Submit <i class="fa fa-plus"></i></button>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="media s-container">
+                        <div class="media-body">
+                            <div class="panel panel-default">
+                                @{
+                                    Html.RenderAction("CommentsList", "Comments", new { id = Model.BatchId });
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    }

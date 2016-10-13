@@ -1,0 +1,31 @@
+﻿@model AttendanceViewModels
+@using (Html.BeginForm("CreateSession", "Attendances", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        @Html.Label("Batch Name", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Batch", (IEnumerable<SelectListItem>)ViewBag.batchlist, "Select Batch", htmlAttributes: new { @class = "" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Session Date", htmlAttributes: new { @class = "col-sm-3 control-label" })
+        <div class="col-md-9">
+            @Html.EditorFor(model => model.AttendanceDate, new { @class = "form-control datepicker date" })
+            @Html.ValidationMessageFor(model => model.AttendanceDate, "", new { @class = "text-danger " })
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success btn-lg paper-shadow relative" data-z="1" data-hover-z="2" data-animated href="#">Create Attendance</button>
+    </div>
+
+}
+
+@*<script>
+        //selecting value
+        $(document).ready(function () {
+            $("#Batch").change(function () {
+                $('option:selected', $(this)).text();
+                $(this).parents('form').submit();
+            });
+        });
+    </script>*@

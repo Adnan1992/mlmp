@@ -1,0 +1,50 @@
+﻿@*@using PagedList;
+    @using PagedList.Mvc;
+
+
+    @model IPagedList<Enrollment>*@
+
+@{
+    ViewBag.Title = "Enrolment Requests";
+}
+
+
+<script>
+
+    $(document).ready(function () {
+        $('#checkAll').click(function (event) {  //on click
+            if (this.checked) { // check select status
+                $("input[type='checkbox']").each(function () { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"
+
+                });
+            }
+            else {
+                $("input[type='checkbox']").each(function () { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"
+                });
+            }
+        });
+    });
+</script>
+
+
+@{Html.RenderAction("AdminNameGet"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h2 class="page-section-heading">Enrollmemnt Requests</h2>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @{Html.RenderAction("AjaxPaging"); }
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("_AccountManageBarAdmin");}
+        </div>
+    </div>
+</div>

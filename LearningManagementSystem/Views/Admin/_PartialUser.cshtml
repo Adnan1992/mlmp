@@ -1,0 +1,70 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<UsersViewModel>
+
+
+<div id="userlist">
+    <div class="table-responsive">
+        @using (Ajax.BeginForm("AjaxGetAllUsers", "Admin", new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.ReplaceWith, HttpMethod = "GET" }))
+        {
+            <div class="col-md-4" style="margin-left: 180px;">
+                <div class="form-group form-control-material static">
+                    @Html.TextBox("search", null, new { @class = "form-control used", @placeholder = "Search by Name", value = "" })
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-left: 60px;">
+                <button type="submit" value="Change password" class="btn btn-success btn-stroke"><span><i class="fa fa-search"></i></span> Search User</button>
+            </div>
+        }
+        <table class="table v-middle">
+            <thead>
+                <tr>
+                    <th>@Ajax.ActionLink(" Name", "AjaxGetAllUsers", "Admin", new { sortBy = ViewBag.SortByName, search = Request.QueryString["search"] }, new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "fa fa-sort" })</th>
+                    <th>Email</th>
+                    <th>@Ajax.ActionLink(" Role", "AjaxGetAllUsers", "Admin", new { sortBy = ViewBag.SortByRole, search = Request.QueryString["search"] }, new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "fa fa-sort" })</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="responsive-table-body">
+                @foreach (var item in Model)
+            {
+                    @Html.HiddenFor(model => item.Id)
+                    <tr>
+                        <td> @item.Name </td>
+                        <td><a href="#">@item.Email</a></td>
+                        <td>@item.Role</td>
+                        <td>
+                            <a href="@Url.Action("DeleteUser","Admin",new {id=item.Id})" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <a href="@Url.Action("EditEmail", "Admin", new { id = item.Id })" class="btn btn-primary btn-xs" data-toggle="tooltip" data-placement="top" title="Edit Profile">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            @if (item.Role != "admin")
+                            {
+                                <a href="@Url.Action("Redirecttoprofile", "Admin", new { id = item.Id })" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" title="View Profile">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="panel-footer padding-none text-center">
+        <ul class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("AjaxGetAllUsers", new { page, search = Request.QueryString["search"], sortBy = Request.QueryString["sortBy"] }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions()
+       {
+           Display = PagedListDisplayMode.IfNeeded,
+           DisplayPageCountAndCurrentLocation = true,
+           MaximumPageNumbersToDisplay = 3
+       },
+   new AjaxOptions() { UpdateTargetId = "userlist", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }
+   ))
+        </ul>
+    </div>
+</div>

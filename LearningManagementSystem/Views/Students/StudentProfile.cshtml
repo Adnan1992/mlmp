@@ -1,0 +1,56 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Student Profile";
+}
+<div class="parallax bg-white page-section">
+    <div class="parallax-layer container" data-opacity="true">
+        <div class="media v-middle">
+            <div class="media-body">
+                <h1 class="text-display-1 margin-none">@Model.FullName</h1>
+            </div>
+            <div class="media-right">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-8">
+
+            <div class="page-section">
+                <div class="width-350 width-300-md width-100pc-xs paragraph-inline">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        @if (Model.Image != null)
+                        {
+                            <img src="@Url.Content(@Model.Image)" alt="" class="img img-responsive " />
+                        }
+                    </div>
+                </div>
+                <p>
+                    @Model.Biography
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <div class="page-section">
+                <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated="">
+                    <div class="panel-heading">
+                        <h4 class="text-headline">Details</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-caption">
+                            <i class="fa fa-users"></i> @Model.FullName
+                            <br />
+                            <i class="fa fa-mobile"></i> @Model.PhoneNumber
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

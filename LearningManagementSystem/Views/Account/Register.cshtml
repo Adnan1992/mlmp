@@ -1,0 +1,83 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                <h4 class="page-section-heading">Sign Up</h4>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-material static required">
+                                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control used", @placeholder = "Your first name", value = "" } })
+                                        @Html.LabelFor(model => model.FirstName)
+                                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-material static required">
+                                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control used", @placeholder = "Your last name", value = "" } })
+                                        @Html.LabelFor(model => model.LastName)
+                                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group form-control-material static required">
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control used", value = "", @placeholder = "Email" })
+                                @Html.LabelFor(model => model.Email)
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-material static required">
+                                        @Html.PasswordFor(model => model.Password, new { @class = "form-control used", value = "", @placeholder = "Password" })
+                                        @Html.LabelFor(model => model.Password)
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-material static required">
+                                        @Html.PasswordFor(model => model.Confirmpassword, new { @class = "form-control used", value = "", @placeholder = "Confirm Password" })
+                                        @Html.LabelFor(model => model.Confirmpassword)
+                                        @Html.ValidationMessageFor(model => model.Confirmpassword, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group form-control-material static required">
+                                @Html.TextBoxFor(model => model.ContactNumber, new { @class = "form-control used", value = "", @placeholder = "Contact #" })
+                                @Html.LabelFor(model => model.ContactNumber)
+                                @Html.ValidationMessageFor(model => model.ContactNumber, "", new { @class = "text-danger" })
+                            </div>
+                            <br />
+
+
+                            <div class="form-group form-control-material static required">
+                                @Html.DropDownListFor(model => model.Gender, new SelectListItem[]
+                                    {
+                                        new SelectListItem() {Value="Male",Text="Male" },
+                                        new SelectListItem() { Value = "Female", Text = "Female" },
+                                    }, "Select Gender", new { @class = "form-control used dropdown", data_style = "btn-white" })
+                                @Html.LabelFor(model => model.Gender)
+                                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

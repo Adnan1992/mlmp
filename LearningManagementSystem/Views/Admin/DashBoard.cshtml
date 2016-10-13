@@ -1,0 +1,51 @@
+﻿@model InstructorViewModels
+@{
+    ViewBag.Title = "DashBorad";
+}
+
+@{Html.RenderAction("AdminNameGet"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="panel panel-default">
+                    <h2 class="page-section-heading">Dashboard</h2>
+                    <hr />
+                    <ul class="nav nav-pills ">
+
+                        @*<li><a href="#">  <span class="glyphicon glyphicon-ok"> </span> Hello </a></li>*@
+                        <li><a href="@Url.Action("DashBoard", "Admin")"><spna class="fa fa-dashboard"></spna> Dashboard</a></li>
+                        <li><a href="@Url.Action("RegisterAdmin", "Admin")"><span class="icon-user-1"> New Admin</span></a></li>
+                        <li><a href="@Url.Action("GetAllUsers","Admin")"><span class="fa fa-list"></span> Users List</a></li>
+                        <li><a href="@Url.Action("EnrolManage", "Admin")"><span class="md-assignment-turned-in"></span> Enrollment Requests</a></li>
+
+
+                        <li><a href="@Url.Action("Create", "Courses")"><span class="md-laptop-chromebook"></span> Create Course</a></li>
+                        <li><a href="@Url.Action("AllCourses", "Courses")"><span class="fa fa-list"></span> Courses List</a></li>
+                        <li><a href="@Url.Action("CreateBatch", "Courses")"><span class="md-laptop-mac"></span> Create New Batch</a></li>
+                        <li><a href="@Url.Action("BatchList", "Admin")"><span class="md-list"></span> Batches List</a></li>
+                        <li><a href="@Url.Action("Create", "Gallerie")"><span class="md-image"></span> Upload Images</a></li>
+                        <li><a href="@Url.Action("ImageList", "Admin")"><span class="fa fa-list"></span> All Images</a></li>
+                        <li><a href="@Url.Action("SendSMS", "Admin")"><span class="fa fa-mobile"></span> Send SMS</a></li>
+
+                        <li><a href="@Url.Action("RegisterInstructor", "Instructors")"><span class="icon-user-1"></span> New Instructor</a></li>
+
+
+                        <li><a href="@Url.Action("StudentFeeCreate", "Payments")"><span class="icon-cash-money"></span> Add Student Fee</a></li>
+                        <li><a href="@Url.Action("StudentFeeList", "Payments")"><span class="fa fa-list"></span> Fee List</a></li>
+
+                        <li><a href="@Url.Action("Create", "Payments")"><span class="icon-cash-money"></span> Create Instructor Payment</a></li>
+                        <li><a href="@Url.Action("index", "Payments")"><span class="fa fa-list"></span> Payment List</a></li>
+                    </ul>
+                    <br />
+                </div>
+
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("_AccountManageBarAdmin");}
+        </div>
+    </div>
+</div>

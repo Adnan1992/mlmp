@@ -1,0 +1,18 @@
+﻿@model Student
+
+
+<div class="col-md-3">
+    <div class="panel panel-default" data-toggle="panel-collapse" data-open="true">
+        <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">My Account</h4>
+        </div>
+        <div class="panel-body list-group">
+            <ul class="list-group list-group-menu">
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("DashBoard", "Students")">Dashboard <i class="fa fa-dashboard" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("MyCourses", "Students")">My Courses <i class="fa fa-laptop" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("myAttendance", "Students")">Check Attedance<i class="fa fa-list" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("Edit", "Students",new { id=Model.StudentId})">Profile <i class="fa fa-user" style="float:right;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

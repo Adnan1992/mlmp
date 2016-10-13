@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "myAttendance";
+}
+
+@{Html.RenderAction("Header", "Students"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Check Attendance</h4>
+                    <hr />
+                    <div class="panel-body">
+                        @using (Ajax.BeginForm("Atten", "Students", new AjaxOptions { UpdateTargetId = "showAttendance" }, htmlAttributes: new { @class = "form-horizontal", id = "SelectBatch" }))
+                        {
+                            <div class="form-group">
+                                @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label", })
+                                <div class="col-md-9">
+                                    @Html.DropDownList("Enrollment", (IEnumerable<SelectListItem>)ViewBag.check, "Select Course", htmlAttributes: new { @class = "" })
+                                </div>
+                            </div>
+                        }
+
+                        <div id="showAttendance">
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar", "Students");}
+        </div>
+    </div>
+</div>
+<script>
+
+    //selecting value
+    $(document).ready(function () {
+        $("#Enrollment").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>
+

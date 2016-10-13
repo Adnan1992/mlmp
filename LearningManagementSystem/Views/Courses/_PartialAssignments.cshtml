@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Assignmet>
+
+@foreach (var item in Model)
+{
+    <li class="list-group-item">
+        <div class="media v-middle">
+            <div class="media-left">
+                <div class="icon-block s30 bg-red-300 text-white img-circle">
+                    <i class="fa fa-book"></i>
+                </div>
+            </div>
+            <div class="media-body text-body-2">
+                <span style="float:left;">@item.FileName</span>
+
+
+                @if (User.IsInRole("instructor") || User.IsInRole("student"))
+                {
+                    <span style="float:right;">
+                        <span style="float:left;"><a href="@Url.Action("Download", "Admin", new { filename = item.FileName })"><i class="fa fa-download"></i> </a></span>
+                        &emsp;
+                        @if (User.IsInRole("instructor"))
+                        {
+                            <span style="float:right;"><a href="@Url.Action("Delete", "Assignmets", new { id = item.AssignmetID })"><i class="fa fa-times"></i></a></span>
+                        }
+                    </span>
+                }
+            </div>
+        </div>
+    </li>
+}

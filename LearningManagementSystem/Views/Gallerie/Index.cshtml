@@ -1,0 +1,62 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Gallery>
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<div class="parallax bg-white page-section">
+    <div class="container parallax-layer" data-opacity="true">
+        <div class="media v-middle">
+            <div class="media-body">
+                <h1 class="text-display-2 margin-none">Gallery</h1>
+                @*<p class="text-light lead">Moments of </p>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div>
+                @foreach (var item in Model)
+                {
+                    if (item.ImagePath != null)
+                    {
+                        <div class="item col-lg-3 col-md-3">
+                            <div class="panel panel-default paper-shadow" data-z="0.5">
+                                <div class="cover overlay cover-image-full hover">
+                                    <a href="@Url.Content(item.ImagePath)" title="Image" class="fancybox" rel="group"> <img class="img height-150 bg-default" style="width:100%;" src="@Url.Content(item.ImagePath)" /></a>
+                                </div>
+                                <hr class="margin-none" />
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <ul class="pagination">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+               {
+                   Display = PagedListDisplayMode.IfNeeded,
+                   DisplayPageCountAndCurrentLocation = true,
+                   MaximumPageNumbersToDisplay = 3
+               })
+            </ul>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/Scripts/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="~/Scripts/source/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+

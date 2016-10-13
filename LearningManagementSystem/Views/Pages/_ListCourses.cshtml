@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Batch>
+@foreach (var item in Model)
+{
+    <div class="item">
+        <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+            <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                    <div class="media-left">
+                        <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                            <img class="img icon-block s90 bg-default" src="@Url.Content(item.Course.Path)" />
+                            @*<a href="@Url.Action("Details", "Courses", new { id = Model })" class="overlay overlay-full overlay-hover overlay-bg-white">
+                            </a>*@
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading margin-v-5-3"><a href="@Url.Action("Details", "Courses", new { id = item.BatchID })">@Html.DisplayFor(model=>item.Course.Title)</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

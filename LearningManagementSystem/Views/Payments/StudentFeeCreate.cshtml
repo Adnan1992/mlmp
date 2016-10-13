@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "StudentFeeCreate";
+}
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Create Student Fee</h4>
+                    <hr />
+                    <div class="panel-body">
+                        @using (Ajax.BeginForm("EnrollStudent", "Payments", new AjaxOptions { UpdateTargetId = "StuList",InsertionMode=InsertionMode.Replace }, htmlAttributes: new { @class = "form-horizontal", id = "SelectBatch" }))
+                        {
+                            <div class="form-group">
+                                @Html.Label("Batch", htmlAttributes: new { @class = "col-sm-3 control-label", })
+                                <div class="col-md-9">
+                                    @Html.DropDownList("Batch", (IEnumerable<SelectListItem>)ViewBag.EnrollList, "Select Batch", htmlAttributes: new { @class = "" })
+                                </div>
+                            </div>
+                        }
+
+                        <div id="StuList">
+                        </div>
+                        <div id="succ">
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>
+<script>
+
+    //selecting value
+    $(document).ready(function () {
+        $("#Batch").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>
+

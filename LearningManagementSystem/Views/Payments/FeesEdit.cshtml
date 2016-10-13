@@ -1,0 +1,40 @@
+﻿@model StudentFee
+
+@{
+    ViewBag.Title = "Edit Fee";
+}
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Edit Fee</h4>
+                    <hr />
+                    @ViewBag.Message
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            @using (Html.BeginForm("FeesEdit", "Payments", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.EnrollmentID)
+                                @Html.HiddenFor(model => model.StudentFeeID)
+                                <div class="form-group form-control-material static required">
+                                    @Html.TextBoxFor(model => model.Amount, new { @class = "form-control used", @placeholder = "Amount", required = "required" })
+                                    @Html.Label("Amount")
+                                    @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>

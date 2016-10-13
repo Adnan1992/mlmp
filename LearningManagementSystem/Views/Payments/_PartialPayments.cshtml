@@ -1,0 +1,50 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<Payment>
+
+
+<div class="table-responsive" id="PaymentList">
+    <table class="table v-middle">
+        <thead>
+            <tr>
+                <th>Batch</th>
+                <th>Instructor Name</th>
+                <th>Payment</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="responsive-table-body">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><span class="label label-default">@Html.DisplayFor(modelItem => item.PaymentForBatch)</span></td>
+                    <td><span class="label label-default">@Html.DisplayFor(modelItem => item.Batch.InstructorNamme)</span></td>
+                    <td><span class="label label-default">@Html.DisplayFor(modelItem => item.Amount)</span></td>
+                    <td><span class="label label-default">@Html.DisplayFor(modelItem => item.PaymentDate)</span></td>
+                    <td>
+                        <a href="@Url.Action("Edit","Payments",new { id=item.PaymentID})"
+                           class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top"
+                           title="Edit"><i class="fa fa-pencil"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="panel-footer padding-none text-center">
+    <ul class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("AjaxPayments", new { page }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions()
+   {
+       Display = PagedListDisplayMode.IfNeeded,
+       DisplayPageCountAndCurrentLocation = true,
+       MaximumPageNumbersToDisplay = 3
+   },
+   new AjaxOptions() { UpdateTargetId = "PaymentList", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }
+   ))
+    </ul>
+</div>

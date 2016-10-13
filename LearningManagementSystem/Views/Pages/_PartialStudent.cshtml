@@ -1,0 +1,28 @@
+﻿@model Student
+
+
+<ul class="nav navbar-nav navbar-nav-margin-right">
+    <!-- user -->
+    <li class="dropdown user">
+        @if (Model.Image != null)
+        {
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="@Url.Content(Model.Image)" alt="" class="img-circle" /> @Model.FirstName<span class="caret"></span>
+            </a>
+        }
+        else
+        {
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="" alt="" class="img-circle" /> @Model.FirstName<span class="caret"></span>
+            </a>
+        }
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="@Url.Action("DashBoard","Students")"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="@Url.Action("Edit", "Students", new { id = Model.StudentId })"><i class="fa fa-user"></i> Profile</a></li>
+            <li><a href="@Url.Action("ChangePassword", "Manage")"><i class="fa fa-gear"></i> Change Password</a></li>
+            <li><a href="@Url.Action("LogOff", "Account")"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+    </li>
+    <!-- // END user -->
+</ul>
+

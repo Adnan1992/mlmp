@@ -1,0 +1,64 @@
+﻿@*<div class="form-group">
+    @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label" })
+    <div class="col-md-9">
+        @Html.DropDownList("Course", new SelectList(ViewBag.courselist as System.Collections.IEnumerable, "CourseID", "Title", Model.Course), "Select Course", htmlAttributes: new { @class = "selectpicker" })
+    </div>
+</div>*@
+
+@*<div class="form-group">
+        @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label" })
+        <div class="col-md-9">
+            @Html.DropDownList("Course", (IEnumerable<SelectListItem>)ViewBag.courselist,  "Select Course", htmlAttributes: new { @class = "selectpicker" })
+        </div>
+    </div>*@
+
+@*<div class="form-group">
+        @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label" })
+        <div class="col-md-9">
+            @Html.DropDownListFor(model=>model.Course.CourseID,Model.list, htmlAttributes: new { @class = "selectpicker" })
+        </div>
+    </div>*@
+
+@using (Ajax.BeginForm("SelCourse","Attendances",new AjaxOptions { UpdateTargetId="SelectBatch" ,InsertionMode=InsertionMode.Replace},htmlAttributes:new {@class= "form-horizontal" }))
+{
+    <div class="form-group">
+        @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Course", (IEnumerable<SelectListItem>)ViewBag.courselist, "Select Course",htmlAttributes:new { @class= "" })
+        </div>
+    </div>
+}
+
+<script>
+    //$(document).ready(function () {
+    //$("#Course").change(function () {
+    //    var value = $(this).val();
+    //    $(this).parents('form').submit();
+    //    alert(value);
+    //    });
+    //});
+
+    //$(document).ready(function () {
+    //    $("#Course").change(function () {
+    //        var value = $(this).text();
+    //        $(this).parents('form').submit();
+    //        alert(value);
+    //    });
+    //});
+
+
+    //selecting text
+    //$(document).ready(function() {
+    //    $("#Course").change(function () {
+    //        alert($('option:selected', $(this)).val());
+    //        $(this).parents('form').submit();
+    //    });
+    //});
+    //selecting value
+    $(document).ready(function () {
+        $("#Course").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>

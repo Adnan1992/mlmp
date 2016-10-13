@@ -1,0 +1,146 @@
+﻿@model StudentViewModels
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+
+@{Html.RenderAction("Header", "Students"); }
+
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+
+
+            <div class="col-md-9" id="dashboard">
+                <!-- Tabbable Widget -->
+                <div class="tabbable paper-shadow relative" data-z="0.5">
+                    <!-- Tabs -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            @using (Html.BeginForm("Edit", "Students", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    @Html.HiddenFor(model => model.StudentId)
+                                    @Html.HiddenFor(model => model.UserId)
+                                    @Html.HiddenFor(model => model.Image)
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Image</label>
+                                        <div class="col-md-6">
+                                            <div class="media v-middle">
+                                                <div class="media-left">
+                                                    @if (Model.Image != null)
+                                                    {
+                                                        <div class="icon-block width-100">
+                                                            <img src="@Url.Content(@Model.Image)" alt="" class="img img-responsive " />
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="icon-block width-100 bg-grey-100">
+                                                            <i class="fa fa-photo text-light"></i>
+                                                        </div>
+                                                    }
+                                                </div>
+                                                <div class="media-body">
+                                                    <input type="file" value="Upload Image" id="@Model.Image" name="Image" class="btn btn-white btn-sm paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><br />
+                                    @ViewBag.Message
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Full Name</label>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-control-material">
+                                                        <div class="input-group">
+                                                            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control used", @readonly = "readonly", placeholder = "Your First name" })
+                                                            <label id="@Model.StudentId">First Name</label>
+                                                            @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-control-material">
+                                                        <div class="input-group">
+                                                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control used", @readonly = "readonly", placeholder = "Your Last name" })
+                                                            <label id="@Model.StudentId">Last Name</label>
+                                                            @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-6">
+                                            <div class="form-control-material">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control used", @readonly = "readonly", placeholder = "Your Email" })
+                                                    <label id="@Model.StudentId">Email Address</label>
+                                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-6">
+                                            <div class="form-control-material">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"></span>
+                                                    @Html.TextBoxFor(model => model.Gender, new { @class = "form-control used", placeholder = "Gender", @readonly = "readonly" })
+                                                    <label id="@Model.StudentId">Gender</label>
+                                                    @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Biography, htmlAttributes: new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-6">
+                                            <div class="">
+                                                @Html.TextAreaFor(model => model.Biography, 4, 6, new { @style = "width: 391px; height: 141px;", placeholder = "Biography" })
+                                                @Html.ValidationMessageFor(model => model.Biography, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.ContactNumber, htmlAttributes: new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-6">
+                                            <div class="form-control-material">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
+                                                    @Html.TextBoxFor(model => model.ContactNumber, new { @class = "form-control used", placeholder = "Your Contact number" })
+                                                    <label id="@Model.StudentId">Contact Number</label>
+                                                    @Html.ValidationMessageFor(model => model.ContactNumber, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group margin-none">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <button type="submit" class="btn btn-primary paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated>Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div><!--End Tab Content-->
+                </div><!--End Tabbable Widget -->
+                <br />
+                <br />
+            </div><!--End Col-md-9-->
+            @{ Html.RenderAction("SideBar", "Students");}
+        </div>
+    </div>
+</div>

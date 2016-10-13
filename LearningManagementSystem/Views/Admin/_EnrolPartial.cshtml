@@ -1,0 +1,67 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<Enrollment>
+
+<div id="listenrol">
+    <div class="table-responsive">
+        @using (Html.BeginForm("EnrolManage", "Admin"))
+        {
+            <table class="table v-middle">
+
+
+                <thead>
+                    <tr>
+                        <th width="20">
+                            <div class="checkbox checkbox-single margin-none">
+                                <input id="checkAll" data-toggle="check-all" data-target="#responsive-table-body" type="checkbox">
+                                <label for="checkAll">Check All</label>
+                            </div>
+                        </th>
+                        <th>Title</th>
+                        <th>Name</th>
+                        <th>Approved Status</th>
+                    </tr>
+                </thead>
+
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            <div class="checkbox checkbox-single">
+                                <input id="@item.EnrollmentID" name="CheckIds" value="@item.EnrollmentID" type="checkbox" style="background-color:grey;">
+                                <label for="@item.EnrollmentID">Label</label>
+                            </div>
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Batch.Title)</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Student.FirstName)
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.IsApproved)</td>
+                    </tr>
+
+                }
+                @if (Model.Count > 0)
+                {
+                    <tr>
+                        <td><button type="submit" class="btn btn-success" name="checkbox">Approve Request</button></td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+    <div class="panel-footer padding-none text-center">
+        <ul class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("AjaxPaging", new { page }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions()
+   {
+       Display = PagedListDisplayMode.IfNeeded,
+       DisplayPageCountAndCurrentLocation = true,
+       MaximumPageNumbersToDisplay = 3
+   },
+   new AjaxOptions() { UpdateTargetId = "listenrol", InsertionMode = InsertionMode.ReplaceWith, HttpMethod = "GET" }
+   ))
+        </ul>
+    </div>
+</div>

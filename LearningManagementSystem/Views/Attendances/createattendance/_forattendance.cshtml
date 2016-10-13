@@ -1,0 +1,20 @@
+﻿
+@using (Ajax.BeginForm("BatchforAttendance", "Attendances", new AjaxOptions { UpdateTargetId = "SelectBatch", InsertionMode = InsertionMode.Replace }, htmlAttributes: new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        @Html.Label("Course", htmlAttributes: new { @class = "col-sm-3 control-label", })
+        <div class="col-md-9">
+            @Html.DropDownList("Course", (IEnumerable<SelectListItem>)ViewBag.courselist, "Select Course", htmlAttributes: new { @class = "" })
+        </div>
+    </div>
+}
+
+<script>
+    //selecting value
+    $(document).ready(function () {
+        $("#Course").change(function () {
+            $('option:selected', $(this)).text();
+            $(this).parents('form').submit();
+        });
+    });
+</script>

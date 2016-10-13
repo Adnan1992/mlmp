@@ -1,0 +1,90 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="hide-sidebar ls-bottom-footer" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="~/Content/all.css" rel="stylesheet">
+    <link href="~/Content/app.css" rel="stylesheet">
+    <link href="css/app/app.css" rel="stylesheet">
+</head>
+<body class="login">
+    <div id="content">
+        <div class="container-fluid">
+            <div class="lock-container">
+                <div class="panel panel-default text-center paper-shadow" data-z="0.5">
+                    <a href="@Url.Action("Index","Pages")"> <img src="~/Content/Images/logo.png" style="width:160px;"></a>
+                    <h1 class="text-display-1 text-center margin-bottom-none">Sign In</h1><br />
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="form-control-material">
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control used", placeholder = "Your Email", value = "" })
+                                    <label>Email</label>
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <div class="form-control-material">
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control used", placeholder = "Password", value = "" })
+                                    <label>Password</label>
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <div class="checkbox checkbox-success">
+                                <input id="checkbox" type="checkbox" name="checkbox">
+                                <label for="checkbox">Remember Me ?</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login<span><i class="fa fa-fw fa-unlock-alt"></i></span></button>
+                            <a href="@Url.Action("ForgotPassword","Account")" class="forgot-password">Forgot password?</a>
+                            <a href="@Url.Action("Register","Account")" class="forgot-password">Create account</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <strong>Microtechx Technologies</strong> &copy; Copyright @DateTime.Now.Year
+    </footer>
+    @*<script>
+            var colors = {
+                "danger-color": "#e74c3c",
+                "success-color": "#81b53e",
+                "warning-color": "#f0ad4e",
+                "inverse-color": "#2c3e50",
+                "info-color": "#2d7cb5",
+                "default-color": "#6e7882",
+                "default-light-color": "#cfd9db",
+                "purple-color": "#9D8AC7",
+                "mustard-color": "#d4d171",
+                "lightred-color": "#e15258",
+                "body-bg": "#f6f6f6"
+            };
+            var config = {
+                theme: "html",
+                skins: {
+                    "default": {
+                        "primary-color": "#42a5f5"
+                    }
+                }
+            };
+        </script>*@
+    <script src="~/Scripts/all.js"></script>
+    <script src="~/Scripts/app.js"></script>
+</body>
+</html>

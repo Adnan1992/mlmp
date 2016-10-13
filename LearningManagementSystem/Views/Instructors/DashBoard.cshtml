@@ -1,0 +1,36 @@
+﻿@model Instructor
+@{
+    ViewBag.Title = "DashBorad";
+}
+
+@{Html.RenderAction("Header"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="panel panel-default">
+                    <h2 class="page-section-heading">Dashboard</h2>
+                    <hr />
+                    <ul class="nav nav-pills ">
+                        <li><a href="@Url.Action("DashBoard", "Instructors")"><span class="fa fa-dashboard"></span> Dashboard</a></li>
+                        <li><a href="@Url.Action("MyCourses", "Instructors",new { id = Model.InstructorId })"><span class="fa fa-laptop"></span> My Courses</a></li>
+                        <li><a href="@Url.Action("Edit", "Instructors",new { id = Model.InstructorId })"><span class="fa fa-user"></span> Profile </a></li>
+                        <li><a href="@Url.Action("Upload", "Assignmets")"><span class="fa fa-upload"></span> Upload Assignment</a></li>
+                        <li><a href="@Url.Action("UploadLecture", "Assignmets")"><span class="fa fa-upload"></span> Upload Lecture</a></li>
+                        <li><a href="@Url.Action("InstPaymentView", "Payments",new { id = Model.InstructorId })"><span class="icon-cash-money"></span> View Payments</a></li>
+
+                        <li><a href="@Url.Action("Index", "Attendances")"><span class="fa fa-edit"></span> Mark Attendance</a></li>
+                        <li><a href="@Url.Action("CreateSession", "Attendances")"><span class="fa fa-check-circle"></span> Create Attendance</a></li>
+                        <li><a href="@Url.Action("GetAttendance", "Attendances")"><span class="fa fa-tasks"></span> Fetch Attendance</a></li>
+                    </ul>
+                    <br />
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar");}
+        </div>
+    </div>
+</div>

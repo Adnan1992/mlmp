@@ -1,0 +1,32 @@
+﻿@model Student
+@{
+    ViewBag.Title = "DashBorad";
+}
+
+@{Html.RenderAction("Header", "Students"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="panel panel-default">
+                    <h2 class="page-section-heading">Dashboard</h2>
+                    <hr />
+                    <ul class="nav nav-pills ">
+                        <li><a href="@Url.Action("DashBoard", "Students")"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                        <li><a href="@Url.Action("MyCourses", "Students")"><i class="fa fa-laptop"></i> My Courses</a></li>
+                        <li><a href="@Url.Action("myAttendance", "Students")"><i class="fa fa-list"></i> Check Attedance</a></li>
+                        <li><a href="@Url.Action("Edit", "Students",new { id=Model.StudentId})"><i class="fa fa-user"></i> Profile</a></li>
+                    </ul>
+                    <br />
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar", "Students");}
+
+        </div>
+    </div>
+</div>
+

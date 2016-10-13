@@ -1,0 +1,24 @@
+﻿@model Instructor
+<div class="col-md-3">
+    <div class="panel panel-default" data-toggle="panel-collapse" data-open="true">
+        <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">My Account</h4>
+        </div>
+        <div class="panel-body list-group">
+            <ul class="list-group list-group-menu">
+
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("DashBoard", "Instructors")">Dashboard <i class="fa fa-dashboard" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("MyCourses", "Instructors",new { id = Model.InstructorId })">My Courses <i class="fa fa-laptop" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("Edit", "Instructors",new { id = Model.InstructorId })">Profile <i class="fa fa-user" style="float:right;"></i></a></li>
+
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("Upload", "Assignmets")">Upload Assignment <span class="fa fa-upload" style="float:right;"></span></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("UploadLecture", "Assignmets")">Upload Lecture <span class="fa fa-upload" style="float:right;"></span></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("InstPaymentView", "Payments",new { id = Model.InstructorId })">View Payments <i class="icon-cash-money" style="float:right;"></i></a></li>
+
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("CreateSession", "Attendances")">Create Attendance <i class="fa fa-check-circle" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("Index", "Attendances")">Mark Attendance <i class="fa fa-edit" style="float:right;"></i></a></li>
+                <li class="list-group-item"><a class="link-text-color" href="@Url.Action("GetAttendance", "Attendances")">Fetch Attendance <i class="fa fa-tasks" style="float:right;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

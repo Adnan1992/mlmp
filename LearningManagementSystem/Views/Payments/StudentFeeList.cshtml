@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Fee List";
+}
+
+@{Html.RenderAction("AdminNameGet", "Admin"); }
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <h4 class="page-section-heading">Fee Lists</h4>
+                    <hr />
+
+                    @{ Html.RenderAction("AjaxFeesList");}
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderPartial("~/Views/Admin/_AccountManageBarAdmin.cshtml");}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model Assignmet
+@{
+    ViewBag.Title = "Upload";
+}
+
+@{Html.RenderAction("Header", "Instructors"); }
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="panel panel-default">
+                    <h2 class="page-section-heading">Upload Assignment</h2>
+                    <hr />
+                    <div class="panel-body">
+                        @using (Html.BeginForm("Upload", "Assignmets", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <br />
+                            <div class="form-group form-control-material static required">
+                                @Html.DropDownListFor(model => model.BatchID, (IEnumerable<SelectListItem>)ViewBag.Batch, "Select Batch", new { @class = "form-control used" })
+                                @Html.Label("Batch")
+                                @Html.ValidationMessageFor(model => model.BatchID, "", new { @class = "text-danger" })
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label style="color:#ce7a13;">File</label>
+                                <div class="media-body">
+                                    <input type="file" value="Upload File" name="file" class="btn btn-white btn-sm paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated />
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        }
+                    </div>
+                    <br />
+                </div>
+                <br />
+                <br />
+            </div>
+            @{ Html.RenderAction("SideBar", "Instructors");}
+        </div>
+    </div>
+</div>

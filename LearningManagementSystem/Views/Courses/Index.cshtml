@@ -1,0 +1,71 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using LearningManagementSystem.Controllers
+
+@model IPagedList<Batch>
+
+@{
+    ViewBag.Title = "Courses";
+    string description = null;
+}
+
+
+<div class="parallax bg-white page-section">
+    <div class="container parallax-layer" data-opacity="true">
+        <div class="media v-middle">
+            <div class="media-body">
+                <h1 class="text-display-2 margin-none">Library</h1>
+                <p class="text-light lead">Browse through thousands of lessons.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-section">
+        <div class="row">
+            <div>
+                @foreach (var item in Model)
+            {
+                {
+                    description = HttpUtility.HtmlDecode(item.Description).ToString().ToCharArray().Take(60).ToSystemString();
+                }
+                    <div class="item col-lg-3 col-md-3">
+                        <div class="panel panel-default paper-shadow" data-z="0.5">
+                            <div class="cover overlay cover-image-full hover">
+                                <img class="img height-150 bg-default" src="@Url.Content(item.Course.Path)" />
+                            </div>
+                            <div class="panel-body">
+                                <h4 class="text-headline margin-v-0-10"><a href="@Url.Action("Details", "Courses", new { id = item.BatchID })">@item.Course.Title</a></h4>
+                            </div>
+                            <hr class="margin-none" />
+                            <div class="panel-body">
+                                <p>@Html.Raw(description)</p>
+                                <div class="media v-middle">
+                                    <div class="media-body">
+                                        <h4>
+                                            <a href="@Url.Action("Details", "Courses", new { id = item.BatchID })">@Html.DisplayFor(modelitem => item.InstructorNamme)</a>
+                                            <br />
+                                        </h4>
+                                        Instructor
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <ul class="pagination">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+           {
+               Display = PagedListDisplayMode.IfNeeded,
+               DisplayPageCountAndCurrentLocation = true,
+               MaximumPageNumbersToDisplay = 3
+           })
+            </ul>
+        </div>
+    </div>
+</div>
